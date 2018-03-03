@@ -1,0 +1,107 @@
+<html lang="pt-br">
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>Começando html e css</title>
+
+  </head>
+
+  <style>
+
+    .informacao-pessoal {
+      text-align: center;
+      color: white;
+      background-color: #212121;
+    }
+
+    .imagem img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      height: 120px;
+      width: 120px;
+      box-shadow: 10px 10px 10px;
+
+    }
+
+    .perfil-rede-social {
+      text-align: center;
+    }
+
+    .perfil-rede-social a {
+        color: #9df39f;
+    }
+
+    .perfil-rede-social a:hover {
+        color: #eb939a;
+    }
+
+    .texto-grande {
+      text-align: center;
+      border-width: medium;
+      border-color: black;
+      color: black;
+      background-color: white;
+    }
+
+    #tudo  {
+      width: 500px;
+      margin: auto;
+      position: relative;
+    }
+    #background {
+      background-image: url("background.jpg");
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background-position: 0 0;
+      background-size: auto 100%;
+      animation: animatedBackground 10s linear infinite;
+    }
+
+    @keyframes animatedBackground {
+      from {
+        transform:rotate(0deg);
+      }
+      to {
+        transform:rotate(180deg);
+      }
+    }
+
+  </style>
+
+  <body>
+
+    <div id="background">
+    </div>
+      <div id="tudo">
+        <div class="informacao-pessoal">
+          <h1>Gustavo Borges de Camargo</h1>
+          <h2>27 anos</h2>
+        </div>
+
+        <div class="imagem">
+          <img src="imagem.jpg" alt="Foto"/>
+        </div>
+
+        <div class="texto-grande">
+          <h4>Porque voce quer aprender programação?</h4>
+          <p>
+            Para encontrar um modo divertido de trabalhar.
+          </p>
+        </div>
+
+        <div class="perfil-rede-social">
+          <a href="https://www.facebook.com/gustavo.borges.961"  target="_blank" >Perfil Facebook</a>
+          <br>
+          <a href="https://www.linkedin.com/in/gustavoborges961" target="_blank" >Perfil Linkedin</a>
+        </div>
+      </div>
+
+
+
+
+</html>
